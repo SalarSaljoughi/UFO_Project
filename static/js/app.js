@@ -1,10 +1,13 @@
 // from data.js
 var tableData = data;
 
+
 var tbody = d3.select("tbody");
 
 console.log(data);
 
+
+// search date
 d3.select("#filter-btn").on("click", function () {
   tbody.selectAll("tr").remove()
   event.preventDefault()
@@ -19,6 +22,8 @@ d3.select("#filter-btn").on("click", function () {
     })
   })
 })
+
+
 
 // Import data into HTML table
 data.map(x => {
