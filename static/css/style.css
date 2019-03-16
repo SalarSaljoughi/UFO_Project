@@ -60,9 +60,21 @@ body {
 .filters .panel-body {
   padding: 0;
 }
+#filter-btn {
+  background-color: white;
+  color: black;
+  width: 165px;
+  margin-bottom: 20px;
+
+}
 
 .filters {
   margin-top: 5px;
+}
+
+#searchInput {
+  width: 135px; 
+  height: 40px
 }
 
 select {

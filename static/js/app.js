@@ -5,7 +5,20 @@ var tbody = d3.select("tbody");
 
 console.log(data);
 
-
+d3.select("#filter-btn").on("click", function () {
+  tbody.selectAll("tr").remove()
+  event.preventDefault()
+  input = document.getElementById("datetime").value
+  tableData = data.filter(function (d) {
+    return d.datetime == input;
+  })
+  tableData.map(x => {
+    let newTr = tbody.append('tr');
+    Object.values(x).forEach(val => {
+      newTr.append('td').text(val)
+    })
+  })
+})
 
 // Import data into HTML table
 data.map(x => {

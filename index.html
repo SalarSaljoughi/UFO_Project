@@ -30,14 +30,27 @@
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
+              <div class="panel-heading">Date Search</div>
               <div class="panel-body">
                 <form>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <input type="text" id="searchInput" onkeyup="search()" placeholder="Search Keywords"
-                              style="width: 135px; height: 30px"/>
+                        <label for="date">Enter a Date</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2010">
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="submit" class="btn btn-default">Click to Filter</button>
+                </form>
+              </div>
+              <div class="panel-heading">Table Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group2">
+                    <ul class="list-group" id="filters2">
+                      <li class="filter list-group-item">
+                        <input type="text" id="searchInput" onkeyup="search()" placeholder="Search Keywords" />
                       </li>
                     </ul>
                   </div>
@@ -76,20 +89,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-<div class="form-group">
-  <ul class="list-group" id="filters">
-    <li class="filter list-group-item">
-      <label for="date"></label>
-      
-    </li>
-  </ul>
-</div>
