@@ -114,6 +114,7 @@ select {
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
+  max-width:100%;
 }
 
 .hero h1 {
